@@ -1,0 +1,71 @@
+17.4s 1 <class 'pandas.core.frame.DataFrame'>
+17.4s 2 RangeIndex: 11914 entries, 0 to 11913
+17.4s 3 Data columns (total 16 columns):
+17.4s 4 #   Column             Non-Null Count  Dtype
+17.4s 5 ---  ------             --------------  -----
+17.4s 6 0   Make               11914 non-null  object
+17.4s 7 1   Model              11914 non-null  object
+17.4s 8 2   Year               11914 non-null  int64
+17.4s 9 3   Engine Fuel Type   11911 non-null  object
+17.4s 10 4   Engine HP          11845 non-null  float64
+17.4s 11 5   Engine Cylinders   11884 non-null  float64
+17.4s 12 6   Transmission Type  11914 non-null  object
+17.4s 13 7   Driven_Wheels      11914 non-null  object
+17.4s 14 8   Number of Doors    11908 non-null  float64
+17.4s 15 9   Market Category    8172 non-null   object
+17.4s 16 10  Vehicle Size       11914 non-null  object
+17.4s 17 11  Vehicle Style      11914 non-null  object
+17.4s 18 12  highway MPG        11914 non-null  int64
+17.4s 19 13  city mpg           11914 non-null  int64
+17.4s 20 14  Popularity         11914 non-null  int64
+17.4s 21 15  MSRP               11914 non-null  int64
+17.4s 22 dtypes: float64(3), int64(5), object(8)
+17.4s 23 memory usage: 1.5+ MB
+17.6s 24 There are (11914, 16) rows and column in the dataframe.
+17.6s 25 
+17.6s 26 There are 715 duplicate rows in the dataframe
+17.6s 27 
+18.5s 28 
+18.5s 29 Duplicate sample:
+18.5s 30 
+18.5s 31 
+18.5s 32 Duplicate data have been removed from the dataset.
+18.8s 33 
+18.8s 34 Distinct Make and Model with missing engine cylinders:
+18.8s 35 
+19.1s 36 
+19.1s 37 Distinct Make and Model with missing engine HP:
+19.1s 38 
+19.8s 39 Before:
+19.8s 40 
+20.4s 41 After:
+20.4s 42 
+21.1s 43 Number of unique car make availabe in the dataset is: 48
+21.2s 44 Number of unique car model availabe in the dataset is: 914
+21.4s 45 Number of unique car engine_fuel_type availabe in the dataset is: 10
+21.5s 46 Number of unique car transmission_type availabe in the dataset is: 5
+21.6s 47 Number of unique car driven_wheels availabe in the dataset is: 4
+21.7s 48 Number of unique car vehicle_size availabe in the dataset is: 3
+21.8s 49 Number of unique car vehicle_style availabe in the dataset is: 16
+28.1s 50 Trained Linear regression
+28.5s 51 Trained Linear regression (Ridge)
+42.6s 52 Trained Linear regression (Lasso)
+65.1s 53 Trained Random forest
+74.7s 54 Trained Gradient boosting
+74.9s 55 Linear regression Rˆ2 Score: -3181870460422192120201216.000
+74.9s 56 Linear regression (Ridge) Rˆ2 Score: 0.935
+74.9s 57 Linear regression (Lasso) Rˆ2 Score: 0.943
+75.1s 58 Random forest Rˆ2 Score: 0.951
+75.1s 59 Gradient boosting Rˆ2 Score: 0.919
+79.4s 60 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2755: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+79.4s 61 FutureWarning,
+79.4s 62 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+79.8s 63 [NbConvertApp] Writing 690231 bytes to __notebook__.ipynb
+82.6s 64 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2755: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+82.6s 65 FutureWarning,
+82.6s 66 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+83.7s 67 [NbConvertApp] Support files will be in __results___files/
+83.7s 68 [NbConvertApp] Making directory __results___files
+83.7s 69 [NbConvertApp] Making directory __results___files
+83.7s 70 [NbConvertApp] Making directory __results___files
+83.7s 71 [NbConvertApp] Writing 850656 bytes to __results__.html

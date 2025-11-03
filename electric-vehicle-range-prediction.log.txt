@@ -1,0 +1,339 @@
+15.4s 1 <class 'pandas.core.frame.DataFrame'>
+15.4s 2 RangeIndex: 103 entries, 0 to 102
+15.4s 3 Data columns (total 14 columns):
+15.4s 4 #   Column           Non-Null Count  Dtype
+15.4s 5 ---  ------           --------------  -----
+15.4s 6 0   Brand            103 non-null    object
+15.4s 7 1   Model            103 non-null    object
+15.4s 8 2   AccelSec         103 non-null    float64
+15.4s 9 3   TopSpeed_KmH     103 non-null    int64
+15.4s 10 4   Range_Km         103 non-null    int64
+15.4s 11 5   Efficiency_WhKm  103 non-null    int64
+15.4s 12 6   FastCharge_KmH   103 non-null    object
+15.4s 13 7   RapidCharge      103 non-null    object
+15.4s 14 8   PowerTrain       103 non-null    object
+15.4s 15 9   PlugType         103 non-null    object
+15.4s 16 10  BodyStyle        103 non-null    object
+15.4s 17 11  Segment          103 non-null    object
+15.4s 18 12  Seats            103 non-null    int64
+15.4s 19 13  PriceEuro        103 non-null    int64
+15.4s 20 dtypes: float64(1), int64(5), object(8)
+15.4s 21 memory usage: 11.4+ KB
+22.0s 22 Brand                            Model PowerTrain RapidCharge  \
+22.0s 23 0         Tesla     Model 3 Long Range Dual Motor        AWD         Yes
+22.0s 24 1    Volkswagen                         ID.3 Pure        RWD         Yes
+22.0s 25 2      Polestar                                 2        AWD         Yes
+22.0s 26 3           BMW                              iX3         RWD         Yes
+22.0s 27 4         Honda                                e         RWD         Yes
+22.0s 28 ..           ...                              ...        ...         ...
+22.0s 29 98       Nissan                       Ariya 63kWh        FWD         Yes
+22.0s 30 99         Audi     e-tron S Sportback 55 quattro        AWD         Yes
+22.0s 31 100      Nissan               Ariya e-4ORCE 63kWh        AWD         Yes
+22.0s 32 101      Nissan   Ariya e-4ORCE 87kWh Performance        AWD         Yes
+22.0s 33 102       Byton                 M-Byte 95 kWh 2WD        AWD         Yes
+22.0s 34 
+22.0s 35 PlugType  BodyStyle Segment
+22.0s 36 0    Type 2 CCS      Sedan       D
+22.0s 37 1    Type 2 CCS  Hatchback       C
+22.0s 38 2    Type 2 CCS   Liftback       D
+22.0s 39 3    Type 2 CCS        SUV       D
+22.0s 40 4    Type 2 CCS  Hatchback       B
+22.0s 41 ..          ...        ...     ...
+22.0s 42 98   Type 2 CCS  Hatchback       C
+22.0s 43 99   Type 2 CCS        SUV       E
+22.0s 44 100  Type 2 CCS  Hatchback       C
+22.0s 45 101  Type 2 CCS  Hatchback       C
+22.0s 46 102  Type 2 CCS        SUV       E
+22.0s 47 
+22.0s 48 [103 rows x 7 columns]
+22.0s 49 [[ 30.  46.   0.   1.   2.   7.   3.]
+22.0s 50 [ 31.  33.   2.   1.   2.   1.   2.]
+22.0s 51 [ 23.   0.   0.   1.   2.   2.   3.]
+22.0s 52 [  2. 101.   2.   1.   2.   6.   3.]
+22.0s 53 [  9.  78.   2.   1.   2.   1.   1.]
+22.0s 54 [ 15.   4.   0.   1.   2.   7.   5.]
+22.0s 55 [ 31.  83.   1.   1.   2.   1.   2.]
+22.0s 56 [ 22.  81.   1.   1.   2.   1.   1.]
+22.0s 57 [ 30.  48.   2.   1.   2.   7.   3.]
+22.0s 58 [  1.  62.   0.   1.   2.   6.   3.]
+22.0s 59 [ 18.  21.   0.   1.   2.   6.   3.]
+22.0s 60 [ 20.  39.   1.   1.   3.   1.   2.]
+22.0s 61 [ 10.  38.   1.   1.   2.   6.   1.]
+22.0s 62 [  2. 100.   2.   1.   2.   7.   3.]
+22.0s 63 [ 10.  35.   1.   1.   2.   2.   2.]
+22.0s 64 [ 31.  32.   2.   1.   2.   1.   2.]
+22.0s 65 [ 24.  69.   0.   1.   2.   7.   5.]
+22.0s 66 [ 31.  89.   1.   1.   2.   1.   0.]
+22.0s 67 [ 16.  74.   1.   1.   2.   6.   1.]
+22.0s 68 [ 19.  12.   1.   1.   2.   1.   1.]
+22.0s 69 [ 21.  13.   1.   1.   2.   1.   1.]
+22.0s 70 [ 30.  53.   0.   1.   2.   6.   3.]
+22.0s 71 [ 27.  23.   2.   1.   2.   6.   2.]
+22.0s 72 [  1.  92.   0.   1.   2.   7.   5.]
+22.0s 73 [ 30.  47.   0.   1.   2.   7.   3.]
+22.0s 74 [ 31.  34.   2.   1.   2.   6.   2.]
+22.0s 75 [ 31.  30.   2.   1.   2.   1.   2.]
+22.0s 76 [ 32.  73.   0.   1.   2.   6.   2.]
+22.0s 77 [  2.  98.   2.   1.   2.   1.   1.]
+22.0s 78 [ 22.  80.   1.   1.   2.   6.   1.]
+22.0s 79 [  1.  90.   0.   1.   2.   6.   4.]
+22.0s 80 [ 12.  86.   1.   1.   2.   6.   2.]
+22.0s 81 [ 25.  76.   1.   1.   2.   1.   1.]
+22.0s 82 [ 30.  16.   0.   1.   2.   4.   6.]
+22.0s 83 [ 17.  44.   1.   1.   2.   6.   2.]
+22.0s 84 [ 20.  40.   1.   1.   3.   1.   2.]
+22.0s 85 [ 13.  72.   1.   1.   3.   6.   2.]
+22.0s 86 [  4.  97.   2.   1.   2.   1.   2.]
+22.0s 87 [ 25.  77.   1.   1.   2.   1.   1.]
+22.0s 88 [ 18.  20.   0.   1.   2.   6.   2.]
+22.0s 89 [ 30.  49.   0.   1.   1.   2.   5.]
+22.0s 90 [ 10.  37.   1.   1.   2.   6.   1.]
+22.0s 91 [  1.  96.   0.   1.   2.   6.   4.]
+22.0s 92 [ 27.  11.   1.   1.   2.   1.   0.]
+22.0s 93 [ 26.  45.   1.   1.   2.   1.   0.]
+22.0s 94 [ 12.  88.   1.   1.   2.   6.   1.]
+22.0s 95 [ 21.   5.   1.   1.   2.   3.   1.]
+22.0s 96 [ 24.  65.   0.   1.   2.   7.   5.]
+22.0s 97 [ 14.  60.   0.   1.   2.   2.   5.]
+22.0s 98 [  0.  71.   1.   1.   2.   6.   2.]
+22.0s 99 [  1.  91.   0.   1.   2.   6.   4.]
+22.0s 100 [ 30.  63.   0.   1.   2.   0.   7.]
+22.0s 101 [ 21.  55.   1.   1.   2.   6.   1.]
+22.0s 102 [ 27.  25.   2.   1.   2.   6.   2.]
+22.0s 103 [ 30.  51.   0.   1.   1.   6.   5.]
+22.0s 104 [  9.  79.   2.   1.   2.   1.   1.]
+22.0s 105 [  6.   1.   1.   1.   2.   6.   1.]
+22.0s 106 [ 25.  70.   2.   0.   1.   1.   0.]
+22.0s 107 [  5.  82.   1.   1.   2.   6.   2.]
+22.0s 108 [ 30.  50.   0.   1.   1.   2.   5.]
+22.0s 109 [ 25.  75.   1.   1.   2.   1.   1.]
+22.0s 110 [ 30.  54.   0.   1.   2.   6.   3.]
+22.0s 111 [ 20.   7.   1.   1.   2.   1.   2.]
+22.0s 112 [ 11.  28.   0.   1.   2.   6.   4.]
+22.0s 113 [  8.  57.   2.   1.   2.   6.   3.]
+22.0s 114 [ 24.  66.   0.   1.   2.   7.   5.]
+22.0s 115 [ 20.  84.   1.   1.   0.   5.   6.]
+22.0s 116 [ 30.  14.   0.   1.   2.   4.   6.]
+22.0s 117 [ 25.  36.   1.   0.   1.   5.   6.]
+22.0s 118 [  8.  56.   0.   1.   2.   6.   3.]
+22.0s 119 [  2.  99.   2.   1.   2.   1.   1.]
+22.0s 120 [ 27.  26.   0.   1.   2.   6.   2.]
+22.0s 121 [ 24.  67.   0.   1.   2.   8.   5.]
+22.0s 122 [  3.  43.   0.   1.   2.   6.   4.]
+22.0s 123 [ 29.  64.   1.   1.   2.   1.   2.]
+22.0s 124 [ 12.  85.   1.   1.   2.   6.   2.]
+22.0s 125 [  1.  61.   0.   1.   2.   6.   3.]
+22.0s 126 [ 28.  17.   2.   0.   1.   1.   0.]
+22.0s 127 [  8.  58.   0.   1.   2.   6.   3.]
+22.0s 128 [ 24.  68.   0.   1.   2.   7.   5.]
+22.0s 129 [ 31.  29.   2.   1.   2.   1.   2.]
+22.0s 130 [ 30.  52.   0.   1.   1.   6.   5.]
+22.0s 131 [ 28.  19.   2.   0.   1.   1.   0.]
+22.0s 132 [  8.  59.   2.   1.   2.   6.   3.]
+22.0s 133 [ 18.  22.   1.   1.   2.   5.   6.]
+22.0s 134 [  7.   3.   1.   1.   2.   1.   1.]
+22.0s 135 [ 30.  15.   2.   1.   2.   4.   6.]
+22.0s 136 [  1.  95.   0.   1.   2.   6.   4.]
+22.0s 137 [ 27.  27.   0.   1.   2.   6.   2.]
+22.0s 138 [ 27.  24.   2.   1.   2.   6.   2.]
+22.0s 139 [  1.  93.   0.   1.   2.   6.   4.]
+22.0s 140 [ 28.  18.   2.   0.   1.   0.   0.]
+22.0s 141 [ 12.  88.   1.   1.   2.   6.   1.]
+22.0s 142 [ 20.   9.   0.   1.   2.   1.   2.]
+22.0s 143 [  7.   2.   1.   1.   2.   0.   1.]
+22.0s 144 [ 31.  31.   2.   1.   2.   1.   2.]
+22.0s 145 [ 12.  87.   1.   1.   2.   6.   1.]
+22.0s 146 [  3.  41.   2.   1.   2.   6.   4.]
+22.0s 147 [ 20.   6.   1.   1.   2.   1.   2.]
+22.0s 148 [  1.  94.   0.   1.   2.   6.   4.]
+22.0s 149 [ 20.   8.   0.   1.   2.   1.   2.]
+22.0s 150 [ 20.  10.   0.   1.   2.   1.   2.]
+22.0s 151 [  3.  42.   0.   1.   2.   6.   4.]]
+53.0s 152 X_train :  (82, 1)
+53.0s 153 X_test :  (21, 1)
+53.0s 154 y_train :  (82,)
+53.0s 155 y_test :  (21,)
+53.5s 156 [488.70469038]
+55.4s 157 R2 for Traing Data:  0.6297694922844455
+55.5s 158 R2 for Testing Data:  0.15363068038695216
+55.6s 159 MSE:  11242.893676247608
+55.8s 160 MAE:  78.18137850937941
+55.9s 161 RMSE:  106.03251235469057
+56.7s 162 
+56.7s 163 (Step) Excluded = TopSpeed_KmH, PriceEuro, AccelSec, Segment, Efficiency_WhKm, Seats
+56.7s 164 (Step) Trying TopSpeed_KmH...
+56.7s 165 (Step) - Features = TopSpeed_KmH
+56.7s 166 (Step) - Adjusted R^2: This = 0.625; Best = 0.000
+56.7s 167 (Step) - New Best!   : Feature = TopSpeed_KmH; R^2 = 0.630; Adjusted R^2 = 0.625
+56.7s 168 (Step) Trying PriceEuro...
+56.7s 169 (Step) - Features = PriceEuro
+56.7s 170 (Step) - Adjusted R^2: This = 0.549; Best = 0.625
+56.7s 171 (Step) Trying AccelSec...
+56.7s 172 (Step) - Features = AccelSec
+56.7s 173 (Step) - Adjusted R^2: This = 0.452; Best = 0.625
+56.7s 174 (Step) Trying Segment...
+56.7s 175 (Step) - Features = Segment
+56.7s 176 (Step) - Adjusted R^2: This = 0.382; Best = 0.625
+56.7s 177 (Step) Trying Efficiency_WhKm...
+56.7s 178 (Step) - Features = Efficiency_WhKm
+56.7s 179 (Step) - Adjusted R^2: This = 0.064; Best = 0.625
+56.7s 180 (Step) Trying Seats...
+56.7s 181 (Step) - Features = Seats
+56.7s 182 (Step) - Adjusted R^2: This = 0.055; Best = 0.625
+56.7s 183 Added feature TopSpeed_KmH with R^2 = 0.630 and adjusted R^2 = 0.625
+56.7s 184 
+56.7s 185 (Step) Excluded = AccelSec, Segment, PriceEuro, Efficiency_WhKm, Seats
+56.7s 186 (Step) Trying AccelSec...
+56.7s 187 (Step) - Features = TopSpeed_KmH, AccelSec
+56.7s 188 (Step) - Adjusted R^2: This = 0.631; Best = 0.625
+56.7s 189 (Step) - New Best!   : Feature = AccelSec; R^2 = 0.640; Adjusted R^2 = 0.631
+56.7s 190 (Step) Trying Segment...
+56.7s 191 (Step) - Features = TopSpeed_KmH, Segment
+56.7s 192 (Step) - Adjusted R^2: This = 0.641; Best = 0.631
+56.7s 193 (Step) - New Best!   : Feature = Segment; R^2 = 0.650; Adjusted R^2 = 0.641
+56.7s 194 (Step) Trying PriceEuro...
+56.7s 195 (Step) - Features = TopSpeed_KmH, PriceEuro
+56.7s 196 (Step) - Adjusted R^2: This = 0.646; Best = 0.641
+56.7s 197 (Step) - New Best!   : Feature = PriceEuro; R^2 = 0.655; Adjusted R^2 = 0.646
+56.7s 198 (Step) Trying Efficiency_WhKm...
+56.7s 199 (Step) - Features = TopSpeed_KmH, Efficiency_WhKm
+56.7s 200 (Step) - Adjusted R^2: This = 0.620; Best = 0.646
+56.7s 201 (Step) Trying Seats...
+56.7s 202 (Step) - Features = TopSpeed_KmH, Seats
+56.7s 203 (Step) - Adjusted R^2: This = 0.641; Best = 0.646
+56.7s 204 Added feature PriceEuro with R^2 = 0.655 and adjusted R^2 = 0.646
+56.7s 205 
+56.7s 206 (Step) Excluded = Segment, Efficiency_WhKm, Seats, AccelSec
+56.7s 207 (Step) Trying Segment...
+56.7s 208 (Step) - Features = TopSpeed_KmH, PriceEuro, Segment
+56.7s 209 (Step) - Adjusted R^2: This = 0.648; Best = 0.646
+56.7s 210 (Step) - New Best!   : Feature = Segment; R^2 = 0.661; Adjusted R^2 = 0.648
+56.7s 211 (Step) Trying Efficiency_WhKm...
+56.7s 212 (Step) - Features = TopSpeed_KmH, PriceEuro, Efficiency_WhKm
+56.7s 213 (Step) - Adjusted R^2: This = 0.643; Best = 0.648
+56.7s 214 (Step) Trying Seats...
+56.7s 215 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats
+56.7s 216 (Step) - Adjusted R^2: This = 0.669; Best = 0.648
+56.7s 217 (Step) - New Best!   : Feature = Seats; R^2 = 0.682; Adjusted R^2 = 0.669
+56.7s 218 (Step) Trying AccelSec...
+56.7s 219 (Step) - Features = TopSpeed_KmH, PriceEuro, AccelSec
+56.7s 220 (Step) - Adjusted R^2: This = 0.656; Best = 0.669
+56.7s 221 Added feature Seats with R^2 = 0.682 and adjusted R^2 = 0.669
+56.7s 222 
+56.7s 223 (Step) Excluded = Segment, Efficiency_WhKm, AccelSec
+56.7s 224 (Step) Trying Segment...
+56.7s 225 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, Segment
+56.7s 226 (Step) - Adjusted R^2: This = 0.666; Best = 0.669
+56.7s 227 (Step) Trying Efficiency_WhKm...
+56.7s 228 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, Efficiency_WhKm
+56.7s 229 (Step) - Adjusted R^2: This = 0.672; Best = 0.669
+56.7s 230 (Step) - New Best!   : Feature = Efficiency_WhKm; R^2 = 0.688; Adjusted R^2 = 0.672
+56.7s 231 (Step) Trying AccelSec...
+56.7s 232 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, AccelSec
+56.7s 233 (Step) - Adjusted R^2: This = 0.677; Best = 0.672
+56.7s 234 (Step) - New Best!   : Feature = AccelSec; R^2 = 0.693; Adjusted R^2 = 0.677
+56.7s 235 Added feature AccelSec with R^2 = 0.693 and adjusted R^2 = 0.677
+56.7s 236 
+56.7s 237 (Step) Excluded = Segment, Efficiency_WhKm
+56.7s 238 (Step) Trying Segment...
+56.7s 239 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, AccelSec, Segment
+56.7s 240 (Step) - Adjusted R^2: This = 0.673; Best = 0.677
+56.7s 241 (Step) Trying Efficiency_WhKm...
+56.7s 242 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, AccelSec, Efficiency_WhKm
+56.7s 243 (Step) - Adjusted R^2: This = 0.681; Best = 0.677
+56.7s 244 (Step) - New Best!   : Feature = Efficiency_WhKm; R^2 = 0.701; Adjusted R^2 = 0.681
+56.7s 245 Added feature Efficiency_WhKm with R^2 = 0.701 and adjusted R^2 = 0.681
+56.7s 246 
+56.7s 247 (Step) Excluded = Segment
+56.7s 248 (Step) Trying Segment...
+56.7s 249 (Step) - Features = TopSpeed_KmH, PriceEuro, Seats, AccelSec, Efficiency_WhKm, Segment
+56.7s 250 (Step) - Adjusted R^2: This = 0.681; Best = 0.681
+56.7s 251 (Step) - New Best!   : Feature = Segment; R^2 = 0.705; Adjusted R^2 = 0.681
+56.7s 252 Added feature Segment with R^2 = 0.705 and adjusted R^2 = 0.681
+56.7s 253 
+56.7s 254 (Step) Excluded =
+56.7s 255 **************************************************
+56.7s 256 
+56.7s 257 Resulting features:
+56.7s 258 TopSpeed_KmH, PriceEuro, Seats, AccelSec, Efficiency_WhKm, Segment
+69.2s 259 Alpha: 19.791668678535572
+69.2s 260 Score: 0.6467904685229368
+69.8s 261 68.50082915686325
+69.8s 262 0.7047900146524513
+69.8s 263 98.54263271897918
+69.8s 264 0.26897853326748533
+71.9s 265 Alpha: 482.41087041653736
+71.9s 266 Score: 0.5423596191706892
+72.5s 267 68.5008306844336
+72.5s 268 0.7047900014860699
+72.5s 269 98.54843710334595
+72.5s 270 0.26889241308942313
+81.9s 271 31     -80.653722
+81.9s 272 68     120.792391
+81.9s 273 63     135.718933
+81.9s 274 48    -117.533883
+81.9s 275 43     -14.067880
+81.9s 276 41      67.909563
+81.9s 277 91    -100.717517
+81.9s 278 46      72.637466
+81.9s 279 11      15.012017
+81.9s 280 1       57.864079
+81.9s 281 19     -32.057118
+81.9s 282 32      75.420670
+81.9s 283 98     -14.274991
+81.9s 284 86     -21.932045
+81.9s 285 77      72.053241
+81.9s 286 5      -93.644847
+81.9s 287 80    -173.389035
+81.9s 288 34     358.472251
+81.9s 289 13     100.226171
+81.9s 290 27      70.433793
+81.9s 291 101    -21.412395
+81.9s 292 Name: Range_Km, dtype: float64
+82.2s 293 31     -83.715045
+82.2s 294 68     113.593859
+82.2s 295 63     136.640227
+82.2s 296 48    -120.645532
+82.2s 297 43     -15.731764
+82.2s 298 41      61.505778
+82.2s 299 91    -104.779162
+82.2s 300 46      71.666541
+82.2s 301 11      15.321647
+82.2s 302 1       51.259567
+82.2s 303 19     -31.318471
+82.2s 304 32      74.890551
+82.2s 305 98     -19.305206
+82.2s 306 86     -20.195942
+82.2s 307 77      72.106718
+82.2s 308 5      -91.523348
+82.2s 309 80    -171.186623
+82.2s 310 34     351.552557
+82.2s 311 13     101.122874
+82.2s 312 27      70.450825
+82.2s 313 101    -26.417441
+82.2s 314 Name: Range_Km, dtype: float64
+86.9s 315 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2935: FutureWarning: --Exporter.preprocessors=["remove_papermill_header.RemovePapermillHeader"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+86.9s 316 FutureWarning,
+86.9s 317 [NbConvertApp] Converting notebook __notebook__.ipynb to notebook
+87.6s 318 [NbConvertApp] Writing 1987119 bytes to __notebook__.ipynb
+89.3s 319 /opt/conda/lib/python3.7/site-packages/traitlets/traitlets.py:2935: FutureWarning: --Exporter.preprocessors=["nbconvert.preprocessors.ExtractOutputPreprocessor"] for containers is deprecated in traitlets 5.0. You can pass `--Exporter.preprocessors item` ... multiple times to add items to a list.
+89.3s 320 FutureWarning,
+89.3s 321 [NbConvertApp] Converting notebook __notebook__.ipynb to html
+90.5s 322 [NbConvertApp] Support files will be in __results___files/
+90.5s 323 [NbConvertApp] Making directory __results___files
+90.5s 324 [NbConvertApp] Making directory __results___files
+90.5s 325 [NbConvertApp] Making directory __results___files
+90.5s 326 [NbConvertApp] Making directory __results___files
+90.5s 327 [NbConvertApp] Making directory __results___files
+90.5s 328 [NbConvertApp] Making directory __results___files
+90.5s 329 [NbConvertApp] Making directory __results___files
+90.5s 330 [NbConvertApp] Making directory __results___files
+90.5s 331 [NbConvertApp] Making directory __results___files
+90.5s 332 [NbConvertApp] Making directory __results___files
+90.5s 333 [NbConvertApp] Making directory __results___files
+90.6s 334 [NbConvertApp] Making directory __results___files
+90.6s 335 [NbConvertApp] Making directory __results___files
+90.6s 336 [NbConvertApp] Making directory __results___files
+90.6s 337 [NbConvertApp] Making directory __results___files
+90.6s 338 [NbConvertApp] Making directory __results___files
+90.6s 339 [NbConvertApp] Writing 535642 bytes to __results__.html
