@@ -1,7 +1,7 @@
 # Electric-vehicle-
 Electric Vehicle Range Prediction - Regression Analysis
 
-## Project overview[1]
+# Project overview
 
 This project focuses on predicting the driving range of electric vehicles (EVs) using regression-based machine learning models applied to a tabular dataset of EV characteristics and usage conditions.
 Accurately estimating the remaining range on a single charge helps reduce driver anxiety, improves trip planning, and supports better charging decisions.
